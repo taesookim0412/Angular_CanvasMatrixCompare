@@ -1,0 +1,22 @@
+<p>p2 data</p>
+<button (click)="convertToBitmap()">Convert to bitmap</button>
+<button (click)="convertToBitmap()">Convert to non-bitmap</button>
+<br>
+<div class="wrapper col-12">
+    <div class="col-4">
+        <p>Original raw pixel matrix:</p>
+        <div #originalMatrixView></div>
+        <p>RGBA Image as Bitmap on Canvas:</p>
+        <div style="height:320px; width: 320px;" class="canvasScalar"><canvas style="height:100%;width:100%;"
+                #canvas></canvas>
+        </div>
+    </div>
+    <div class="col-4">
+        <p>Bitmap post-canvas matrix:</p>
+        <div #postCanvasMatrixView></div>
+        <p>Matrix differences across all 4 channels:</p>
+        <div #comparisonMatrix></div>
+
+    </div>
+
+</div>
