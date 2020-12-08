@@ -112,7 +112,7 @@ export class P2DataComponent implements OnInit, AfterViewChecked {
         if (j < rows/10 || j > rows - rows/10)
         {
           pixToPut = 0;
-          alphaToPut = 255;
+          alphaToPut = 0;
         }
         arr[rgbaIdx] = pixToPut
         arr[rgbaIdx + 1] = (pixToPut * 2) % 255
